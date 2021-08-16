@@ -20,7 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 //decoder
-module decoder(clk,cs,ready_bus,ready_eu,ir,ready1,cs_fcu,cs_biu,cs_eu,sel_fcu,sel_eu,sel_biu);
+module decoder(flag,clk,cs,ready_bus,ready_eu,ir,ready1,cs_fcu,cs_biu,cs_eu,sel_fcu,sel_eu,sel_biu);
+input[1:0] flag;
 input [31:0] ir;
 input clk,cs,ready_bus,ready_eu;
 output ready1;
